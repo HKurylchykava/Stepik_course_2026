@@ -1,0 +1,42 @@
+# Xcode
+#
+## User settings
+xcuserdata/
+
+## compatibility with Xcode 8 and earlier (ignoring not required starting Xcode 9)
+*.xcscmblueprint
+*.xccheckout
+
+## compatibility with Xcode 3 and earlier (ignoring not required starting Xcode 4)
+build/
+DerivedData/
+*.moved-aside
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.pbxlop
+*.perspectivev3
+*.xcworkspace/
+!default.xcworkspace/
+!*.xcworkspace/contents.xcworkspacedata # Ignore most contents.xcworkspacedata
+
+## Swift Package Manager
+.swiftpm/
+!*.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/Package.resolved # Keep Package.resolved
+.build/
+Packages/
+
+## Obj-C/Swift specific
+*.hmap
+
+## App packaging
+*.ipa
+*.dSYM.zip
+
+## Playgrounds
+timeline.xctimeline
+playground.xcworkspace
+
+# macOS
+.DS_Store
+._*
