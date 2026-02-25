@@ -85,6 +85,4 @@ func bestStudents(students: [String: Double]) -> [String:Double] {
    return bestStudents
 }
 print(bestStudents(students: students))
-import UIKit
 
-var greeting = "Hello, playground"
