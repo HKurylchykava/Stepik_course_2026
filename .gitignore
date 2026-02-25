@@ -1,42 +1,56 @@
-# Xcode
-#
-## User settings
-xcuserdata/
+# Игнорируем всё
+*
 
-## compatibility with Xcode 8 and earlier (ignoring not required starting Xcode 9)
-*.xcscmblueprint
-*.xccheckout
+# === РАЗРЕШАЕМ ВАЖНЫЕ ФАЙЛЫ ===
 
-## compatibility with Xcode 3 and earlier (ignoring not required starting Xcode 4)
-build/
+# Playground файлы
+!*.playground/
+!*.playground/contents.swift
+!*.playground/timeline.xctimeline
+
+# Xcode project files (обязательные для сборки)
+!*.xcodeproj/
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/project.xcworkspace/contents.xcworkspacedata
+
+# Workspace (если используется)
+!*.xcworkspace/
+!*.xcworkspace/contents.xcworkspacedata
+
+# Дополнительные файлы
+!*.md                    # README и документация
+!.gitignore              # Сам .gitignore
+!*.plist                 # Настройки приложения (Info.plist)
+!*.entitlements          # Права приложения
+!*.storyboard            # Интерфейсы
+!*.xib                   # Интерфейсы
+!*.xcassets/             # Ресурсы (картинки, иконки)
+!*.swift                 # Исходный код
+
+# === ЗАПРЕЩАЕМ СЛУЖЕБНЫЕ ФАЙЛЫ ===
+
+# Xcode user data (НИКОГДА!)
+*xcuserdata/
+*.xcuserstate
+UserInterfaceState.xcuserstate
+
+# Сборка и временные файлы
 DerivedData/
+build/
 *.moved-aside
 *.pbxuser
 *.mode1v3
 *.mode2v3
-*.pbxlop
 *.perspectivev3
-*.xcworkspace/
-!default.xcworkspace/
-!*.xcworkspace/contents.xcworkspacedata # Ignore most contents.xcworkspacedata
 
-## Swift Package Manager
-.swiftpm/
-!*.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/Package.resolved # Keep Package.resolved
-.build/
-Packages/
-
-## Obj-C/Swift specific
-*.hmap
-
-## App packaging
-*.ipa
-*.dSYM.zip
-
-## Playgrounds
-timeline.xctimeline
-playground.xcworkspace
-
-# macOS
+# Системные файлы
 .DS_Store
-._*
+.idea/
+*.swp
+*.swo
+*~
+
+# Логи и кеши
+*.log
+*.pid
+*.lock
